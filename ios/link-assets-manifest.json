@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/AbhayaLibre-Regular.ttf",
+      "sha1": "ba3a381858a744bbf5babee8ac5b5662ad37872c"
+    },
+    {
+      "path": "src/assets/fonts/KaushanScript-Regular.ttf",
+      "sha1": "8b203c70f9c8f5d437eb5a87a6c7df39fb2996b7"
+    },
+    {
+      "path": "src/assets/fonts/Rokkitt-Italic-VariableFont_wght.ttf",
+      "sha1": "4d15042df982d0c8bc396a34788bb857143c19b5"
+    },
+    {
+      "path": "src/assets/fonts/Rokkitt-VariableFont_wght.ttf",
+      "sha1": "df7982e2a8e314c7192aafd8ccc57d6d060cf1b4"
+    },
+    {
+      "path": "src/assets/fonts/SF-Pro.ttf",
+      "sha1": "e19df199e78d296e5b6491d4832a76756532ed43"
+    },
+    {
+      "path": "src/assets/fonts/SpaceMono-Regular.ttf",
+      "sha1": "fae3a5a43b50e0408fd61e14383d94a023d332b0"
+    }
+  ]
+}
