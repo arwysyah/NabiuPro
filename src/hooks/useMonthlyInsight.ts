@@ -66,7 +66,7 @@ export const useMonthlyInsight = () => {
             });
           },
           (_, error) => {
-            console.error('Failed to fetch insights:', error);
+            console.log('Failed to fetch insights:', error);
             return true;
           },
         );

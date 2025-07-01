@@ -57,16 +57,19 @@ const Report = () => {
     return () => unsubscribe();
   }, []);
 
-  const {transactions, error, refresh} =
-    useTransactionsByCreatedDate(selectedDate);
   const {locale, currencyCode} = useCurrency();
-  const {transactions: listTrans, loading: ____} = useTransactions();
+
+  const {transactions, refresh: refreshByDate} =
+    useTransactionsByCreatedDate(selectedDate);
+  const {transactions: listTrans, refresh: refreshAllTrans} = useTransactions();
 
   useFocusEffect(
     useCallback(() => {
-      refresh?.();
-    }, [refresh]),
+      refreshByDate?.();
+      refreshAllTrans?.();
+    }, [refreshByDate, refreshAllTrans]),
   );
+
   const uniqueDatesListAllTrans = useMemo(
     () => [...new Set(listTrans.map(tx => tx.date))],
     [listTrans],
